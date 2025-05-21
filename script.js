@@ -40,3 +40,4 @@
     document.getElementById('textInput').value = '';
     document.getElementById('output').value = '';
   }
+

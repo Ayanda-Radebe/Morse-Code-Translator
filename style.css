@@ -1,44 +1,71 @@
-body {
-    font-family: Arial sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 100vh;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #00ff00;
+    }
 
-.container {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgb(12, 192, 27);
-  max-width: 500px;
-  width: 100%;
-  text-align: center;
-}
+    .translator-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
 
-textarea {
-  width: 90%;
-  height: 80px;
-  margin: 1rem 0;
-  padding: 1rem;
-  font-size: 1rem;
-  resize: none;
-}
+    .container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
 
-button {
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  background-color: rgb(10, 112, 19);
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
+    textarea {
+      width: 300px;
+      height: 150px;
+      padding: 1rem;
+      font-size: 1rem;
+      resize: none;
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      box-shadow: 0 0 10px #00ff00;
+    }
 
-button:hover{
-    background-color: rgba(54, 151, 41, 0.973);
-}
+    #textInput::placeholder {
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+      opacity: 1;
+    }
 
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      background-color: rgb(10, 112, 19);
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 6px #00ff00;
+    }
+
+    button:hover {
+      background-color: rgba(54, 151, 41, 0.973);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #00ff00;
+      text-shadow: 0 0 8px #00ff00;
+    }

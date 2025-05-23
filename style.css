@@ -44,8 +44,9 @@
 
     .button-group {
       display: flex;
-      gap: 1rem;
+      gap: 4rem;
       justify-content: center;
+      padding: 15px
     }
 
     button {
@@ -62,6 +63,12 @@
     button:hover {
       background-color: rgba(54, 151, 41, 0.973);
     }
+
+    button.active {
+     background-color: rgba(54, 151, 41, 0.973);
+      box-shadow: 0 0 10px #00ff00;
+    }
+
 
     h2, p {
       text-align: center;

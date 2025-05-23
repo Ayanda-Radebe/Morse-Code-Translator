@@ -17,9 +17,13 @@
   </div>
 
   <div class="button-group">
-  <button onclick="translateToMorse()">Text to Morse</button>
-    <button onclick="clearFields()">Clear</button>
-  <button onclick="translateToText()">Morse to Text</button>
+    <button onclick="translateToMorse(); setPlaceholder('Enter text here to translate into Morse code...'); setActiveButton(this)">Text to Morse</button>
+    <button onclick="clearFields(); setActiveButton(null)">Clear</button>
+    <button onclick="translateToText(); setPlaceholder('Enter Morse Code to translate to plain text'); setActiveButton(this)">Morse to Text</button>
+
+
+  
+
 </div>
 
 </div>

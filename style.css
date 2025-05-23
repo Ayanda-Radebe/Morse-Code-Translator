@@ -1,6 +1,6 @@
     body {
       font-family: Arial, sans-serif;
-      background-color: #141414;
+      background-color: #000000;
       margin: 0;
       padding: 0;
       height: 100vh;
@@ -44,8 +44,9 @@
 
     .button-group {
       display: flex;
-      gap: 1rem;
+      gap: 4rem;
       justify-content: center;
+      padding: 15px
     }
 
     button {
@@ -63,9 +64,15 @@
       background-color: rgba(54, 151, 41, 0.973);
     }
 
-    h2 {
+    button.active {
+     background-color: rgba(54, 151, 41, 0.973);
+      box-shadow: 0 0 10px #00ff00;
+    }
+
+
+    h2, p {
       text-align: center;
       margin-bottom: 1rem;
       color: #00ff00;
-      text-shadow: 0 0 8px #00ff00;
+      text-shadow: 0 0 8px #00ff00; 
     }

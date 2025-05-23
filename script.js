@@ -28,6 +28,12 @@
     7: '--...', 8: '---..', 9: '----.', ' ': '/',
   };
 
+  const textFromMorseMap = {};
+for (const [letter, morse] of Object.entries(morseCodeMap)) {
+  textFromMorseMap[morse] = letter;
+}
+
+
   function translateToMorse() {
     const inputText = document.getElementById('textInput').value.toUpperCase();
     const outputText = inputText.split('').map(char =>
@@ -40,4 +46,13 @@
     document.getElementById('textInput').value = '';
     document.getElementById('output').value = '';
   }
+
+
+  function translateToText() {
+  const inputMorse = document.getElementById('textInput').value.trim();
+  const outputText = inputMorse.split(' ').map(code => 
+    textFromMorseMap[code] || ''
+  ).join('');
+  document.getElementById('output').value = outputText;
+}
 

@@ -1,0 +1,112 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #00ff00;
+    }
+
+    .translator-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    textarea {
+      width: 300px;
+      height: 150px;
+      padding: 1rem;
+      font-size: 1rem;
+      resize: none;
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      box-shadow: 0 0 10px #00ff00;
+    }
+
+    #textInput::placeholder {
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+      opacity: 1;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 4rem;
+      justify-content: center;
+      padding: 15px
+    }
+
+    button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      background-color: rgb(10, 112, 19);
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 6px #00ff00;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    button:hover {
+      background-color: rgba(54, 151, 41, 0.973);
+    }
+
+    button.active {
+     background-color: rgba(54, 151, 41, 0.973);
+      box-shadow: 0 0 10px #00ff00;
+    }
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #00ff00;
+      text-shadow: 0 0 8px #00ff00; 
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 50px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #00ff00;
+      text-shadow: 0 0 8px #00ff00; 
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+#matrix-left,
+#matrix-right {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#matrix-left {
+  left: 0;
+}
+
+#matrix-right {
+  right: 0;
+}
+
+.translator-wrapper {
+  position: relative;
+  z-index: 1; 
+}

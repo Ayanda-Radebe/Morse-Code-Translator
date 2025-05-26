@@ -76,3 +76,26 @@
       color: #00ff00;
       text-shadow: 0 0 8px #00ff00; 
     }
+
+#matrix-left,
+#matrix-right {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#matrix-left {
+  left: 0;
+}
+
+#matrix-right {
+  right: 0;
+}
+
+.translator-wrapper {
+  position: relative;
+  z-index: 1; 
+}

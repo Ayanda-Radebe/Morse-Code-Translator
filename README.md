@@ -29,7 +29,6 @@ Check out the live Morse Code Translator with Matrix effects here:
 - CSS3
 - JavaScript
 
-  https://github.com/Ayanda-Radebe/Morse-Code-Translator.git
 
 ## 🛠️ Getting Started
 

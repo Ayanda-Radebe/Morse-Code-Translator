@@ -28,3 +28,15 @@ Check out the live Morse Code Translator with Matrix effects here:
 - HTML5
 - CSS3
 - JavaScript
+
+  https://github.com/Ayanda-Radebe/Morse-Code-Translator.git
+
+## 🛠️ Getting Started
+
+To use this Morse Code Translator locally, follow these steps:
+
+### 📦 Clone the Repository
+
+```bash
+git clone  https://github.com/Ayanda-Radebe/Morse-Code-Translator.git
+

@@ -77,7 +77,9 @@ function startMatrixEffect(canvasId) {
   canvas.width = 100;
   canvas.height = window.innerHeight;
 
-  const letters = 'アァイィウヴエエェオカキクケコサシスセソタチツテトナニヌネノハヒフホマミムメモヤユヨラリルレロワヲン'.split('');
+  const letters = ['.', '-', '•', '—', '.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-',
+  '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..'];
+
   const fontSize = 16;
   const columns = canvas.width / fontSize;
   const drops = Array(Math.floor(columns)).fill(1);
